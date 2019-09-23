@@ -3,7 +3,7 @@ Build MI6 processor with DAWG and other attack vector mitigations
 
 Our idea is to build an MI6 processor with DAWG security, adding mitigations against other known security vulnerabilities of secure enclaves. 
 
-Our product mission is: "For hardware-level security researchers, the (PRODUCT NAME), is a RISC-V-based out-of-order processor based on MIT CSAIL's MI6 and DAWG with additional mitigations against known secure enclave vulnerabilities, that provides an open-source, flexible, modular platform for testing and assessing the functionality and impact of proposed attack vector mitigations. Unlike most secure enclave research platforms (FIND SPECIFIC EXAMPLES TO CITE), our product incorporates a holistic threat model that allows researchers to more accurately assess the real-world costs of cumulative attack vector mitigations."
+Our product mission is: "For hardware-level security researchers, the Tulong (Earth Dragon in Chinese), is a RISC-V-based out-of-order processor based on MIT CSAIL's MI6 and DAWG with additional mitigations against known secure enclave vulnerabilities, that provides an open-source, flexible, modular platform for testing and assessing the functionality and impact of proposed attack vector mitigations. Unlike most secure enclave research platforms (FIND SPECIFIC EXAMPLES TO CITE), our product incorporates a holistic threat model that allows researchers to more accurately assess the real-world costs of cumulative attack vector mitigations."
 
 Our primary 'customer' (this will be open source) is researchers trying to assess security concerns and their mitigations' performace impact in secure enclaves.
 
