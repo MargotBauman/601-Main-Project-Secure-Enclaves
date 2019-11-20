@@ -1,0 +1,22 @@
+Found and forked code from Mattame here on github. His OoO processor was built in 2012, apparently for a class project.
+Therefore, good chance it's not in RISC V (MIPS is more likely), but I'm hoping/planning to use it to guide my thinking/implementation 
+of Tulong's preliminary reservation station, reorder buffer, and renaming buffer, along with other modules that I haven't wrapped my 
+brain around as well as I think I have (eg, load/store queue). 
+
+With any luck, this will get us (nearly) to the point we had planned to start from: an out of order processor with some preliminary
+security modifications. It will only get us NEARLY there, because there's no indication that this code has any security features. Indeed,
+since it was a class project, there isn't even a guarantee that all, or any, of it works as advertised.  Still, it's going to be very helpful,
+I think.
+
+I will be sure to include a citation/link to the relevant github pages commented in our code. I will also include a comment on how heavily I 
+relied upon the source. For example:
+//from: <url>
+//code below based on ideas from cited code
+
+OR
+//code below relies heavily from cited code
+
+Because I suspect the processor in the code is not RISC V based, it is unlikely that I would be able to just adopt the cited code wholesale
+(changing input/output names as needed), but if I can do that, I will likewise indicate that I have done so.
+
+end FYI
