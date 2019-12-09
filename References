@@ -1,11 +1,42 @@
 References:
 
-RISCY-OOO Paper
-MI6 Paper
-DAWG Paper
+Riscy-OoO Processor:
+Zhang, Sizhuo, Andrew Wright, Thomas Bourgeat, & Arvind. (2018) "Composable Building Blocks to Open up Processor Design."
+
+MI6 Processor:
+Bourgeat, Thomas, Ilia Lebedev, Andrew Wright, Sizhao Zhang, Arvind, & Srinivas Devadas. (2019) "MI6: Secure Enclaves in a
+Speculative Out-of-Order Processor."
+
+DAWG:
+Kiriansky, Vladimir, Ilia Lebedev, Saman Amarasinghe, Srinivas Devadas, & Joel Emer. (2018) "DAWG: A Defense Against Cache
+Timing Attacks in Speculative Execution Processors."
 
 MIT CSAIL GITHUB URL
 OTHER GITHUB URL
 
-Attacks & Mitigations Papers
+Attacks & Mitigations:
+Lipp, Moritz, Michael Schwarz, Daniel Gruss, Thomas Prescher, Werner Haas, Stefan Mangard, Paul Kocher, Daniel Genkin, 
+Yuval Yarom, & Mike Hamburg. (2018) "Meltdown."
+
+Van Bulck, Jo, Marina Minkin, Ofir Weisse, Daniel Genkin, Baris Kasikci, Frank Piessens, Mark Silberstein, Thomas F. Wenisch,
+Yuval Yarom, & Raoul Strackx. (2018) "FORESHADOW: Extracting the Keys to the Intel SGX Kingdom with Transient Out-of-Order
+Execution."
+
+Minkin, Marina, Daniel Moghimi, Moritz Lipp, Michael Schwarz, Jo Van Bulck, Daniel Genkin, Daniel Gruss, Frank Piessens,
+Berk Sunar, & Yuval Yarom. (2019) "Fallout: Reading Kernal Writes From User Space."
+
+Kocher, Paul, Daniel Genkin, Daniel Gruss, Werner Haas, Mike Hamburg, Moritz Lipp, Stefan Mangard, Thomas Prescher, Michael Schwarz,
+& Yuval Yarom. (2018) "Spectre Attacks: Exploiting Speculative Execution."
+
+Gonzalez, Abraham, Ben Korpan, Jerry Zhao, Ed Younis, & Krste Asanovic. (2019) "Replicating and Mitigating Spectre Attacks on
+a Open Source RISC-V Microarchitecture."
+
+Van Schaik, Stephan, Alyssa Milburn, Sebastian Oesterund, Pietro Frigo, Giorgi Maisuradze, Kaveh Razavi, Herbert Bos, &
+Cristiano Giuffrida. (2019) "RIDL: Rogue In-Flight Data Load."
+
+Trippel, Caroline, Daniel Lustig, & Margaret Martonosi. (2018) "CheckMate: Automated Synthesis of Hardware Exploits and 
+Security Litmus Tests."
+
+
+
 
