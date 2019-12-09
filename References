@@ -1,46 +1,84 @@
 References:
 
+Patterson & Henessey. Computer Architecture. 
+  
+  The classic text; having it earlier in the process would have been more helpful.
+
 Riscy-OoO Processor:
 Zhang, Sizhuo, Andrew Wright, Thomas Bourgeat, & Arvind. (2018) "Composable Building Blocks to Open up Processor Design."
+
+  The original architecture upon which MI6 was built. Unfortunately, this processor and MI6 are built in Bluespec Verilog, 
+  a proprietary version of Verilog that is not open source.
 
 MI6 Processor:
 Bourgeat, Thomas, Ilia Lebedev, Andrew Wright, Sizhao Zhang, Arvind, & Srinivas Devadas. (2019) "MI6: Secure Enclaves in a
 Speculative Out-of-Order Processor."
+  
+  The paper that describes the MI6 processor, spawning the idea for this project.
 
 DAWG:
 Kiriansky, Vladimir, Ilia Lebedev, Saman Amarasinghe, Srinivas Devadas, & Joel Emer. (2018) "DAWG: A Defense Against Cache
 Timing Attacks in Speculative Execution Processors."
+  
+  DAWG is a modification intended to be applied to the MI6 system to reduce the performance costs associated with context
+  switches (200-400% slowdown in MI6, where most of its other modifications result in much more reasonable costs).
 
 RISCY-OOO Github Sites:
 https://github.com/csail-csg/riscy
+  
+  The actual Bluespec Verilog code for the RISCY processor and its updated form, the MI6.
+  
 https://github.com/sizhuo-zhang/RiscyOO_design_doc
+  
+  LaTEX files describing the RISCY/MI6 processors, including excellent block diagrams.
 
 Helpful inspirational code for Reorder Buffer and other OOO modules:
 https://github.com/mattame/eecs470
+
+  A class project from someone several years ago that included code that helped us wrap our brains around some of the key
+  modules required for OoO processing. Documentation is lacking.
 
 Attacks & Mitigations:
 Lipp, Moritz, Michael Schwarz, Daniel Gruss, Thomas Prescher, Werner Haas, Stefan Mangard, Paul Kocher, Daniel Genkin, 
 Yuval Yarom, & Mike Hamburg. (2018) "Meltdown."
 
+  The paper that introduced the Meltdown exploit to the world.
+
 Van Bulck, Jo, Marina Minkin, Ofir Weisse, Daniel Genkin, Baris Kasikci, Frank Piessens, Mark Silberstein, Thomas F. Wenisch,
 Yuval Yarom, & Raoul Strackx. (2018) "FORESHADOW: Extracting the Keys to the Intel SGX Kingdom with Transient Out-of-Order
 Execution."
 
+  The paper that introduced the Foreshadow variant of the Meltdown exploit.
+
 Minkin, Marina, Daniel Moghimi, Moritz Lipp, Michael Schwarz, Jo Van Bulck, Daniel Genkin, Daniel Gruss, Frank Piessens,
 Berk Sunar, & Yuval Yarom. (2019) "Fallout: Reading Kernal Writes From User Space."
+
+  The paper that introduceed the Fallout variant of Meltdown. Interestingly, the hardware level modifications made by Intel
+  on its Coffee Lake R chips to mitigate Meltdown actually make those chips more vulnerable to Fallout. Therefore, this was
+  the other major inspiration for this project topic.
 
 Kocher, Paul, Daniel Genkin, Daniel Gruss, Werner Haas, Mike Hamburg, Moritz Lipp, Stefan Mangard, Thomas Prescher, Michael Schwarz,
 & Yuval Yarom. (2018) "Spectre Attacks: Exploiting Speculative Execution."
 
+  The paper that introduced the Spectre attack to the world.
+
 Gonzalez, Abraham, Ben Korpan, Jerry Zhao, Ed Younis, & Krste Asanovic. (2019) "Replicating and Mitigating Spectre Attacks on
 a Open Source RISC-V Microarchitecture."
 
+  This paper demonstrates that reduced instruction set architectures are as vulnerable to speculative execution attacks as complex
+  instruction set architectures. That is, the issue is the speculative execution, not the ISA. While this seems like it should be
+  self-evident, demonstrating it was important.
+  
 Van Schaik, Stephan, Alyssa Milburn, Sebastian Oesterund, Pietro Frigo, Giorgi Maisuradze, Kaveh Razavi, Herbert Bos, &
 Cristiano Giuffrida. (2019) "RIDL: Rogue In-Flight Data Load."
 
+  The paper that introduced the RIDL exploit to the world.
+  
 Trippel, Caroline, Daniel Lustig, & Margaret Martonosi. (2018) "CheckMate: Automated Synthesis of Hardware Exploits and 
 Security Litmus Tests."
 
-
+  This paper proposes a method to detect vulnerabilities in hardware and to identify where those vulnerabilities are. It also 
+  proposes a preliminary version of an approach to address vulnerabilities. We did not explore this approach, but we did intend
+  to use the CheckMate process to check our final processor for remaining vulnerabilities.
 
 
