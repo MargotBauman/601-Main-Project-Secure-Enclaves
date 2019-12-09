@@ -11,7 +11,10 @@ DAWG:
 Kiriansky, Vladimir, Ilia Lebedev, Saman Amarasinghe, Srinivas Devadas, & Joel Emer. (2018) "DAWG: A Defense Against Cache
 Timing Attacks in Speculative Execution Processors."
 
-MIT CSAIL GITHUB URL
+RISCY-OOO Github Sites:
+
+https://github.com/sizhuo-zhang/RiscyOO_design_doc
+
 OTHER GITHUB URL
 
 Attacks & Mitigations:
