@@ -1,0 +1,26 @@
+The five-stage, pipelined, inline processor code is from my colleagues at the Adaptive and Secure Computing Systems Lab at Boston University. 
+I received it in good working order (confirmed by running a test bench). We make use of the most basic pipelined version, ignoring for now 
+the BRAM and cache modules.  (According to my colleagues, these parts of the code are currently being revised.)
+
+With regard to the reorder buffer, while test benches indicate it works as written, I have not connected it to the pipelined processor.
+This is because I don't really like it as written.  It allows instructions to execute out of order, but does so with very different fields
+than those suggested in Patterson & Henessey, who probably know more about the subject than the student whose code I used as a skeleton.
+Therefore, I am inclined to rewrite the reorder buffer to bring it more in line with P & H before I try connecting it to the processor
+proper.  This 'first draft' has helped me wrap my brain around how the reorder buffer should work, but now I would like to write one 
+that works the way it should while conforming better to expected form.
+
+Future work must include the load/store queue(s), a reservation station module (that can be instatiated multiple times), a rename buffer, 
+and, of course, tying all of these into the pipelined processor. Long term future work will include adding cache functionality and
+execution units that can deal with floating points.
+
+After all of that is complete, it will finally be time to revisit the original goal of this work: producing a modular OOO processor
+that can test the efficacy and efficiency of processors with multiple mitigations against known hardware side channel attacks. This may
+also include new cache designs/paradigms eventually.
+
+It turns out that this project, once we rejected using the Bluespec, became a much more difficult challenge. Instead of adapting an
+extant, functional processor, we were faced with creating our own. Since my experience building a single-cycle, inline processor in EC413
+represented the sum total of our processor design experience, it is no surprise that we didn't get very far. Nevertheless, I plan to 
+continue working on this, because I think it's important and interesting. I'm hopeful that EC513 next semester, along with further 
+reading and research, will help me reach a successful outcome...eventually.
+
+-Margot Bauman 9 December 2019
